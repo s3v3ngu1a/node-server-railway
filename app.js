@@ -35,4 +35,6 @@ app.get('/elements', (req, res) => {
     titulo: 'Curso de Node'
 })
 });
-  app.listen(port)
+  app.listen(port, () => {
+    console.log(`listening on port ${port}`)
+  })
